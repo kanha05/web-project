@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+body{
+    background-color: #FFF4CE;
+}
+.full-container{
+    width: 95%;
+    padding-top: 5px;
+    /* margin-left: 2%;
+    margin-right: 2%; */
+}
+.menu{
+    flex-grow: 1;
+    padding: 0;
+    display: flex;
+}
+.logo img{
+    margin-top: -20px;
+    width: 90px;
+}
+.main-menu ul li{
+    list-style: none;
+    padding-left: 20px;
+    display: inline;
+    align-items: center;
+}
+.main-menu ul li a{
+  font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+.main-menu ul li a:hover{
+    color: #e4c617;
+}
+.register{
+    padding-left: 480px;
+    display: inline-flex;
+}
+.login{
+    margin-bottom: auto;
+    padding: 5px;
+    background-color: #FBD46E;
+}
+.signup{
+    margin-bottom: auto;
+    margin-left: 5px;
+    padding: 5px;
+    background-color: #FBD46E;
+}
+.login a{
+  font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+}
+.signup a{
+  font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+}
+#slideshow {
+    overflow: hidden;
+    width: 95%;
+    margin: 0 auto;
+
+  }
+   
+  /* Style each of the sides
+  with a fixed width and height */
+  .slide {
+    float: left;
+    height: 300px;
+    width: 600px;
+  }
+   
+  /* Add animation to the slides */
+  .slide-wrapper {
+     
+  /* Calculate the total width on the
+    basis of number of slides */
+    width: calc(600px * 4);
+   
+  /* Specify the animation with the
+    duration and speed */
+    animation: slide 20s ease infinite;
+  }
+  .slide-image img{
+    width: 300px;
+  }
+  .slide-text h{
+    width: 300px;
+  }
+  .slide-show{
+    display: flex;
+  }
+   
+  /* Set the background color
+  of each of the slides */
+  .slide:nth-child(1) {
+    background: #FBD46E;
+  }
+   
+  .slide:nth-child(2) {
+    background: #FBD46E;
+  }
+   
+  .slide:nth-child(3) {
+    background: #FBD46E;
+  }
+   
+  .slide:nth-child(4) {
+    background: #FBD46E;
+  }
+   
+  /* Define the animation
+  for the slideshow */
+  @keyframes slide {
+     
+  /* Calculate the margin-left for
+    each of the slides */
+    20% {
+      margin-left: 0px;
+    }
+   
+    40% {
+      margin-left: calc(-600px * 1);
+    }
+   
+    60% {
+      margin-left: calc(-600px * 2);
+    }
+   
+    80% {
+      margin-left: calc(-600px * 3);
+    }
+  }
+  .category{
+    display: flex;
+  }
+
+  .box{
+    padding: 3px;
+    height: 300px;
+    width: 300px;
+  }
+
+  .inside-box{
+    height: 225px;
+    width: 225px;
+    background-color: #FBD46E;
+    padding: 10px;
+  }
+  .inside-box p{
+    font-family: 'Rubik',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    color: black;
+  }
+  .inside-box img{
+    padding-left: 50px;
+    width: 110px;
+  }
+  .join{
+    font-family: 'Rubik', sans-serif;
+    margin-top: -50px;
+    color: #e4c617;
+    font-size: x-large;
+    font-weight: bolder;
+    padding-left: 280px;
+  }
+  .content-2 {
+    width: 100%;
+    display: flex;
+  }
+  .image-left img{
+    margin-top: -150px;
+    width: 650px;
+  }
+  .list-content{
+    width: 580px;
+  }
+  .list-content ul li{
+    list-style: none;
+    background-color: #FBD46E;
+    padding: 10px;
+    margin: 10px;
+  }
+  .list-content ul li img{
+    width: 85px;
+  }
+  .list-content p{
+    font-family: 'Rubik', sans-serif;
+    font-size: larger;
+    font-weight: bold;
+  }
