@@ -8,6 +8,9 @@ body{
     /* margin-left: 2%;
     margin-right: 2%;  */
 }
+.main_content{
+  padding: 20px;
+}
 .menu{
   /* position: absolute; */
     flex-grow: 1;
@@ -143,13 +146,13 @@ body{
 
   .box{
     padding: 3px;
-    height: 300px;
-    width: 300px;
+    height: 270px;
+    width: 270px;
   }
 
   .inside-box{
-    height: 225px;
-    width: 225px;
+    height: 200px;
+    width: 200px;
     background-color: #FBD46E;
     padding: 7px;
   }
@@ -178,7 +181,7 @@ body{
     width: 650px;
   }
   .list-content{
-    width: 580px;
+    width: 550px;
   }
   .list-content ul li{
     list-style: none;
