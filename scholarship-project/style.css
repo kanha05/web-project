@@ -299,3 +299,306 @@ body{
     padding-top: 3px;
     width: 55px;
   }
+  .content-aboutus-img-text p {
+    font-size: 25px;
+    width: 700px;
+    position: absolute;
+    left: 50%;
+    bottom: 30%;
+  }
+  .content-aboutus{
+    height:450px;
+    background-color: lightcyan;
+    position: relative;
+    margin-top: 10px;
+  }
+  .content-aboutus h4{
+    position: absolute;
+    left: 20%;
+    text-decoration: underline;
+    font-size: 33px;
+    margin: 0;
+    top: 5%;
+  }
+  .content-aboutus-img{
+    height: 50%;
+    width: 40%;
+  }
+  .content-aboutus-img img{
+    width: 80%;
+    left: 30%;
+    margin-left: 45%;
+  }
+  .how-it-works{
+    height: 400px;
+    background-color: lightpink;
+    position: relative;
+  
+  }
+  .how-it-works h1{
+    position: absolute;
+    left: 20%;
+    text-decoration: underline;
+  }
+  .how-it-works-p1{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    position: absolute;
+    left: 23%;
+    top: 20%;
+  }
+  .how-it-works-p2{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    position: absolute;
+    left: 30%;
+    top: 45%;
+  }
+  .how-it-works-p3{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    position: absolute;
+    left: 38%;
+    bottom: 2%;
+  }
+  .number button{
+    font-size: 50px;
+    border-radius: 50%;
+  }
+  .text p{
+    font-size: 25px;
+    padding-left: 20px;
+  }
+  .sponsorship{
+    height: 200px;
+    background-color: lightgray;
+  }
+  .sponsorship h2{
+    margin: 0;
+    font-size: 40px;
+    padding-top: 10px;
+    padding-left: 610px;
+  }
+  .sponsorship-partner{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 10px;
+  }
+  .asean{
+    width: 180px;
+  }
+  .moeys{
+    width: 150px;
+  }
+  .cadt{
+    width: 120px;
+  }
+  .mptc{
+    width: 100px;
+  }
+  .usaid{
+    width: 100px;
+  }
+  .below-content{
+    background-color: lightblue;
+    position: relative;
+    height: 200px;
+  }
+  .below-content-logo{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .below-content-logo-img-pic{
+    width: 100px;
+  }
+  .contact{
+    position: absolute;
+    bottom:5px;
+    right: 0;
+  }
+  .address p{
+    position: absolute;
+    right:0;
+    top:0;
+  }
+  .googlemap:hover{
+    color: white;
+  }
+  .policy{
+  display: inline-block;
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  }
+  .policy p{
+    margin: 0;
+    cursor: pointer;
+  }
+  .policy p:hover{
+    color: white;   
+    }
+  .contact i{
+    margin-right: 6px;
+    cursor: pointer;
+  }
+  .contact i:hover{
+    color: white;
+  }
+  .content-aboutus-img-text p {
+    font-size: 25px;
+    width: 700px;
+    position: absolute;
+    left: 50%;
+    bottom: 30%;
+  }
+  .content-aboutus{
+    height:450px;
+    background-color: lightcyan;
+    position: relative;
+  }
+  .content-aboutus h4{
+    position: absolute;
+    left: 20%;
+    text-decoration: underline;
+    font-size: 33px;
+    margin: 0;
+    top: 5%;
+  }
+  .content-aboutus-img{
+    height: 50%;
+    width: 40%;
+  }
+  .content-aboutus-img img{
+    width: 80%;
+    left: 30%;
+    margin-left: 45%;
+  }
+  .how-it-works{
+    height: 400px;
+    background-color: lightpink;
+    position: relative;
+  
+  }
+  .how-it-works h1{
+    position: absolute;
+    left: 20%;
+    text-decoration: underline;
+  }
+  .how-it-works-p1{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    position: absolute;
+    left: 23%;
+    top: 20%;
+  }
+  .how-it-works-p2{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    position: absolute;
+    left: 30%;
+    top: 45%;
+  }
+  .how-it-works-p3{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    position: absolute;
+    left: 38%;
+    bottom: 2%;
+  }
+  .number button{
+    font-size: 50px;
+    border-radius: 50%;
+  }
+  .text p{
+    font-size: 25px;
+    padding-left: 20px;
+  }
+  .sponsorship{
+    height: 200px;
+    background-color: lightgray;
+  }
+  .sponsorship h2{
+    margin: 0;
+    font-size: 40px;
+    padding-top: 10px;
+    padding-left: 610px;
+  }
+  .sponsorship-partner{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 10px;
+  }
+  .asean{
+    width: 180px;
+  }
+  .moeys{
+    width: 150px;
+  }
+  .cadt{
+    width: 120px;
+  }
+  .mptc{
+    width: 100px;
+  }
+  .usaid{
+    width: 100px;
+  }
+  .below-content{
+    background-color: lightblue;
+    position: relative;
+    height: 200px;
+  }
+  .below-content-logo{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .below-content-logo-img-pic{
+    width: 100px;
+  }
+  .contact{
+    position: absolute;
+    bottom:5px;
+    right: 0;
+  }
+  .address p{
+    position: absolute;
+    right:0;
+    top:0;
+  }
+  .googlemap:hover{
+    color: white;
+  }
+  .policy{
+  display: inline-block;
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  }
+  .policy p{
+    margin: 0;
+    cursor: pointer;
+  }
+  .policy p:hover{
+    color: white;   
+    }
+  .contact i{
+    margin-right: 6px;
+    cursor: pointer;
+  }
+  .contact i:hover{
+    color: white;
+  }
