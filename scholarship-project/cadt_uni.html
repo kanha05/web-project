@@ -31,30 +31,159 @@
                 </div>
             </div>
         </div>
+        <div class="uni_container">
         <div class="cadt_uni_cover">
-            <img src="image/cadt_cover1.jpg">
+            <img src="image/idt-building.jpg">
         </div>
         <div class="uni-name">
             <h>Cambodia Academy of Digital Technology</h>
         </div>
+        <div class="full_content">
         <div class="uni_content_left">
-            <div class="cadt_page_menu">
-                <ul>
-                    <li>Overview</li>
-                    <li>Tuition Fees</li>
-                    <li>Programs</li>
-                    <li>Scholarship</li>
-                </ul>
+            <div class="tabs">
+                <span data-tab-value="#tab_1">Overview</span>
+                <span data-tab-value="#tab_2">Tuition fees</span>
+                <span data-tab-value="#tab_3">Programs</span>
+                <span data-tab-value="#tab_4">Scholarship</span>
             </div>
+            <div class="tab-content">
+                <div class="tabs__tab active" id="tab_1" data-tab-info>
+                    <p>CADT is a national flagship research and education institution for Digital Technology and Innovation, nurturing digital talent and innovators to drive Cambodia toward a digital society. </p>
+                    <div class="vision_mission">
+                        <div class="vision">
+                            <img src="image/monitoring.png"><br><br>
+                            <b>VISION</b>
+                            <p>To be a leading institute in digital technology with excellent education to foster digital talents toward digital transformation.</p>
+                        </div>
+                        <div class="mission">
+                            <img src="image/target.png"/><br><br>
+                            <b>MISSION</b>
+                            <ul>
+                                <li>Produce qualified digital talents with an equipped skill set to contribute to the development of digital government, economy and society</li>
+                                <li>Develop teaching and learning approaches and diverse education technology for sustainability</li>
+                                <li>Promote R & D activities from the early stage to young scholars. </li>
+                            </ul>
+                        
+                        </div>
+                    </div>
+                    <div class="school_enviroment">
+                        <h>School Enviroment</h>
+                        <div class="inside_photo">
+                            <img src="image/cadt-inside1.jpg">
+                            <img src="image/cadt-inside2.1.jpg">
+                            <img src="image/cadt-inside3.jpg">
+                            <img src="image/cadt-inside4.jpg">
+                            <img src="image/cadt-inside1.jpg">
+                            <img src="image/cadt-inside2.1.jpg">
+                            <img src="image/cadt-inside3.jpg">
+                            <img src="image/cadt-inside4.jpg">
+                            <img src="image/cadt-inside5.jpg">
+                        </div>
+                    </div>
+                    <div class="activity">
+                        <h>News & activities</h>
+                        <div class="activity_category">
+                            <div class="inside-activity"><a href="https://www.cadt.edu.kh/news/cambodia-digital-award-2022-announcing-the-winners/">
+                                <img src="https://www.cadt.edu.kh/wp-content/uploads/2022/12/CAMBODIA-DIGITAL-AWARD-2022-ANNOUNCING-THE-WINNERS-400x250.png"><br>
+                                <h>CAMBODIA DIGITAL AWARD 2022 ANNOUNCING THE WINNERS</h>
+                                <p>9th December 2022</p>
+                            </a>
+                            </div>
+                            <div class="inside-activity"><a href="https://www.cadt.edu.kh/news/cadt-team-took-the-gold-medal-in-the-9th-national-robot-competition-2022/">
+                                <img src="https://www.cadt.edu.kh/wp-content/uploads/2022/07/CADT-TEAM-TOOK-THE-GOLD-MEDAL-IN-THE-9TH-NATIONAL-ROBOT-COMPETITION-2022-50-400x250.jpg"><br>
+                                <h>CADT TEAM TOOK THE GOLD MEDAL IN THE 9TH NATIONAL ROBOT COMPETITION 2022</h>
+                                <p>28th June 2022</p>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+          
+                </div>
+                <div class="tabs__tab" id="tab_2" data-tab-info>
+                    <p>Tuition fees per academic year</p>
+                    <div class="fee-list">
+                        <ul>
+                            <li>Programs</li>
+                            <li>Year1</li>
+                            <li>Year2</li>
+                            <li>Year3</li>
+                            <li>Year4</li>
+                        </ul>
+                    </div><br>
+                    <div class="fee-list">
+                        <ul>
+                            <li>E-Commerce</li>
+                            <li>2,500$</li>
+                            <li>2,500$</li>
+                            <li>2,500$</li>
+                            <li>2,500$</li>
+                        </ul>
+                    </div><br>
+                    <div class="fee-list">
+                        <ul>
+                            <li>Computer Science</li>
+                            <li>2,500$</li>
+                            <li>2,500$</li>
+                            <li>2,500$</li>
+                            <li>2,500$</li>
+                        </ul>
+                    </div><br>
+                    <div class="fee-list">
+                        <ul>
+                            <li>Telecome and Networking</li>
+                            <li>2,500$</li>
+                            <li>2,500$</li>
+                            <li>2,500$</li>
+                            <li>2,500$</li>
+                        </ul>
+                    </div><br>
+                </div>
+                <div class="tabs__tab" id="tab_3" data-tab-info>
+                    <p>Bachelor Programs</p>
+                    <p>E Commerce</p>
+                    <p>Telecome and Networking</p>
+                    <p>Computer Science</p>
+          
+                </div>
+                <div class="tabs__tab" id="tab_4" data-tab-info>
+                    <div class="scholarship">
+                    <p>Cambodia Academy of Digital Technology Scholarship 2023</p>
+                    <img src="image/cadt-scholarship-poster1.png">
+                    <img src="image/cadt-sch.png">
+                    <a href="https://reg.cadt.edu.kh/register">Techo Scholarship</a>
+                    <a href="https://reg.cadt.edu.kh/register">CADT Scholarship Package</a>
+                </div>
+          
+                </div>
+            </div>
+            <script type="text/javascript">
+                const tabs = document.querySelectorAll('[data-tab-value]')
+                const tabInfos = document.querySelectorAll('[data-tab-info]')
+          
+                tabs.forEach(tab => {
+                    tab.addEventListener('click', () => {
+                        const target = document
+                            .querySelector(tab.dataset.tabValue);
+          
+                        tabInfos.forEach(tabInfo => {
+                            tabInfo.classList.remove('active')
+                        })
+                        target.classList.add('active');
+                    })
+                })
+            </script>
+
         </div>
         <div class="uni_content_right">
             <div class="shool_logo">
                 <img src="image/cadt.png"><hr>
             </div>
         </div>
+    </div>
         <div class="footer">
             <h2>Footer</h2>
         </div>
+    </div>
     </div>
 </body>
 </html>
