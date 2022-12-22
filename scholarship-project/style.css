@@ -30,6 +30,9 @@ body{
     width: 200px;
     
 }
+.main-menu{
+  flex:1;
+}
 .main-menu ul li{
     list-style: none;
     padding-left: 15px;
@@ -45,108 +48,250 @@ body{
     color: #26BD99;
 }
 .register{
-    padding-left: 470px;
-    display: inline-flex;
-}
-.login{
-    margin-bottom: auto;
-    padding: 5px;
-    background-color: #26BD99;
-}
-.signup{
-    margin-bottom: auto;
-    margin-left: 5px;
-    padding: 5px;
-    background-color: #26BD99;
-}
-.login a{
-  font-family: 'Rubik', sans-serif;
-    text-decoration: none;
-}
-.signup a{
-  font-family: 'Rubik', sans-serif;
-    text-decoration: none;
-}
-#slideshow {
-    overflow: hidden;
-    width: 94%;
-    margin: 0 auto;
-    margin-top: 45px;
-    /* border-radius: 5%; */
-  }
-   
-  /* Style each of the sides
-  with a fixed width and height */
-  .slide {
-    float: left;
-    height: 500px;
-    width: 1180px;
-  }
-   
-  /* Add animation to the slides */
-  .slide-wrapper {
-     
-  /* Calculate the total width on the
-    basis of number of slides */
-    width: calc(1180px * 4);
-   
-  /* Specify the animation with the
-    duration and speed */
-    animation: slide 20s ease infinite;
-  }
-  .slide-image img{
-    width: 590px;
-  }
-  .slide-text h{
-    width: 590px;
-  }
-  .slide-show{
+    width: 300px;
     display: flex;
+    align-items: center;
+}
+.current-time{
+  width: 100px;
+}
+.current-time h9{
+  color: white;
+}
+.user{
+  width: 250px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.button1, .button2{
+  height: 80%;
+  width: 80px;
+}
+
+.login, .signup{
+  font-size: 15px;
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  cursor: pointer;
+  
+}
+
+.mySlides{
+    display: none;
+    margin-top: 50px;
+}
+
+img{
+    vertical-align: middle;
+}
+/* Slideshow container */
+.slideshow-container{
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.numbertext{
+  color: black;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot{
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active{
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade{
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px){
+  .text {font-size: 11px}
+}
+
+.content-aboutus-img-text p {
+  font-size: 25px;
+  width: 700px;
+  position: absolute;
+  left: 50%;
+  bottom: 30%;
+}
+.content-aboutus{
+  height:450px;
+  background-color: lightcyan;
+  position: relative;
+  margin-top: 10px;
+}
+.content-aboutus h4{
+  position: absolute;
+  left: 20%;
+  text-decoration: underline;
+  font-size: 33px;
+  margin: 0;
+  top: 5%;
+}
+.content-aboutus-img{
+  height: 50%;
+  width: 40%;
+}
+.content-aboutus-img img{
+  width: 80%;
+  left: 30%;
+  margin-left: 45%;
+}
+.how-it-works{
+  height: 400px;
+  background-color: lightpink;
+  position: relative;
+
+}
+.how-it-works h1{
+  position: absolute;
+  left: 20%;
+  text-decoration: underline;
+}
+.how-it-works-p1{
+  display: flex;
+  align-items: center;
+  height: 100px;
+  position: absolute;
+  left: 23%;
+  top: 20%;
+}
+.how-it-works-p2{
+  display: flex;
+  align-items: center;
+  height: 100px;
+  position: absolute;
+  left: 30%;
+  top: 45%;
+}
+.how-it-works-p3{
+  display: flex;
+  align-items: center;
+  height: 100px;
+  position: absolute;
+  left: 38%;
+  bottom: 2%;
+}
+.number button{
+  font-size: 50px;
+  border-radius: 50%;
+}
+.text p{
+  font-size: 25px;
+  padding-left: 20px;
+}
+.sponsorship{
+  height: 200px;
+  background-color: rgb(218, 209, 209);
+  border-bottom: 2px solid black;
+}
+.sponsorship h2{
+  margin: 0;
+  font-size: 40px;
+  padding-top: 10px;
+  padding-left: 610px;
+}
+.sponsorship-partner{
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 10px;
+}
+.asean{
+  width: 180px;
+}
+.moeys{
+  width: 150px;
+}
+.cadt{
+  width: 120px;
+}
+.mptc{
+  width: 100px;
+}
+.usaid{
+  width: 100px;
+}
+.below-content{
+  background-color: rgb(218, 209, 209);
+  position: relative;
+  height: 200px;
+}
+/* .below-content-logo-img{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+} */
+.below-content-logo-img-pic{
+  width: 160px;
+  
+}
+.contact{
+  position: absolute;
+  bottom:5px;
+  right: 0;
+}
+.address p{
+  position: absolute;
+  right:0;
+  top:0;
+}
+.googlemap:hover{
+  color: white;
+}
+.policy{
+display: inline-block;
+position: absolute;
+bottom: 20px;
+left: 10px;
+}
+.policy p{
+  margin: 0;
+  cursor: pointer;
+}
+.policy p:hover{
+  color: white;   
   }
-   
-  /* Set the background color
-  of each of the slides */
-  .slide:nth-child(1) {
-    background: #26BD99;
-  }
-   
-  .slide:nth-child(2) {
-    background: #26BD99;
-  }
-   
-  .slide:nth-child(3) {
-    background: #26BD99;
-  }
-   
-  .slide:nth-child(4) {
-    background: #26BD99;
-  }
-   
-  /* Define the animation
-  for the slideshow */
-  @keyframes slide {
-     
-  /* Calculate the margin-left for
-    each of the slides */
-    20% {
-      margin-left: 0px;
-    }
-   
-    40% {
-      margin-left: calc(-1180px * 1);
-      
-    }
-   
-    60% {
-      margin-left: calc(-1180px * 2);
-      
-    }
-   
-    80% {
-      margin-left: calc(-1180px * 3);
-      
-    }
-  }
+.contact i{
+  margin-right: 6px;
+  cursor: pointer;
+}
+.contact i:hover{
+  color: white;
+} 
+.address a{
+  text-decoration: none;
+}
+
   .category{
     display: flex;
   }
@@ -328,309 +473,8 @@ body{
     padding-top: 3px;
     width: 55px;
   }
-  .content-aboutus-img-text p {
-    font-size: 25px;
-    width: 700px;
-    position: absolute;
-    left: 50%;
-    bottom: 30%;
-  }
-  .content-aboutus{
-    height:450px;
-    background-color: lightcyan;
-    position: relative;
-    margin-top: 10px;
-  }
-  .content-aboutus h4{
-    position: absolute;
-    left: 20%;
-    text-decoration: underline;
-    font-size: 33px;
-    margin: 0;
-    top: 5%;
-  }
-  .content-aboutus-img{
-    height: 50%;
-    width: 40%;
-  }
-  .content-aboutus-img img{
-    width: 80%;
-    left: 30%;
-    margin-left: 45%;
-  }
-  .how-it-works{
-    height: 400px;
-    background-color: lightpink;
-    position: relative;
   
-  }
-  .how-it-works h1{
-    position: absolute;
-    left: 20%;
-    text-decoration: underline;
-  }
-  .how-it-works-p1{
-    display: flex;
-    align-items: center;
-    height: 100px;
-    position: absolute;
-    left: 23%;
-    top: 20%;
-  }
-  .how-it-works-p2{
-    display: flex;
-    align-items: center;
-    height: 100px;
-    position: absolute;
-    left: 30%;
-    top: 45%;
-  }
-  .how-it-works-p3{
-    display: flex;
-    align-items: center;
-    height: 100px;
-    position: absolute;
-    left: 38%;
-    bottom: 2%;
-  }
-  .number button{
-    font-size: 50px;
-    border-radius: 50%;
-  }
-  .text p{
-    font-size: 25px;
-    padding-left: 20px;
-  }
-  .sponsorship{
-    height: 200px;
-    background-color: lightgray;
-  }
-  .sponsorship h2{
-    margin: 0;
-    font-size: 40px;
-    padding-top: 10px;
-    padding-left: 610px;
-  }
-  .sponsorship-partner{
-    display:flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-top: 10px;
-  }
-  .asean{
-    width: 180px;
-  }
-  .moeys{
-    width: 150px;
-  }
-  .cadt{
-    width: 120px;
-  }
-  .mptc{
-    width: 100px;
-  }
-  .usaid{
-    width: 100px;
-  }
-  .below-content{
-    background-color: lightblue;
-    position: relative;
-    height: 200px;
-  }
-  .below-content-logo{
-    display: flex;
-    align-items: center;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-  .below-content-logo-img-pic{
-    width: 100px;
-  }
-  .contact{
-    position: absolute;
-    bottom:5px;
-    right: 0;
-  }
-  .address p{
-    position: absolute;
-    right:0;
-    top:0;
-  }
-  .googlemap:hover{
-    color: white;
-  }
-  .policy{
-  display: inline-block;
-  position: absolute;
-  bottom: 20px;
-  left: 10px;
-  }
-  .policy p{
-    margin: 0;
-    cursor: pointer;
-  }
-  .policy p:hover{
-    color: white;   
-    }
-  .contact i{
-    margin-right: 6px;
-    cursor: pointer;
-  }
-  .contact i:hover{
-    color: white;
-  }
-  .content-aboutus-img-text p {
-    font-size: 25px;
-    width: 700px;
-    position: absolute;
-    left: 50%;
-    bottom: 30%;
-  }
-  .content-aboutus{
-    height:450px;
-    background-color: lightcyan;
-    position: relative;
-  }
-  .content-aboutus h4{
-    position: absolute;
-    left: 20%;
-    text-decoration: underline;
-    font-size: 33px;
-    margin: 0;
-    top: 5%;
-  }
-  .content-aboutus-img{
-    height: 50%;
-    width: 40%;
-  }
-  .content-aboutus-img img{
-    width: 80%;
-    left: 30%;
-    margin-left: 45%;
-  }
-  .how-it-works{
-    height: 400px;
-    background-color: lightpink;
-    position: relative;
-  
-  }
-  .how-it-works h1{
-    position: absolute;
-    left: 20%;
-    text-decoration: underline;
-  }
-  .how-it-works-p1{
-    display: flex;
-    align-items: center;
-    height: 100px;
-    position: absolute;
-    left: 23%;
-    top: 20%;
-  }
-  .how-it-works-p2{
-    display: flex;
-    align-items: center;
-    height: 100px;
-    position: absolute;
-    left: 30%;
-    top: 45%;
-  }
-  .how-it-works-p3{
-    display: flex;
-    align-items: center;
-    height: 100px;
-    position: absolute;
-    left: 38%;
-    bottom: 2%;
-  }
-  .number button{
-    font-size: 50px;
-    border-radius: 50%;
-  }
-  .text p{
-    font-size: 25px;
-    padding-left: 20px;
-  }
-  .sponsorship{
-    height: 200px;
-    background-color: lightgray;
-  }
-  .sponsorship h2{
-    margin: 0;
-    font-size: 40px;
-    padding-top: 10px;
-    padding-left: 610px;
-  }
-  .sponsorship-partner{
-    display:flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-top: 10px;
-  }
-  .asean{
-    width: 180px;
-  }
-  .moeys{
-    width: 150px;
-  }
-  .cadt{
-    width: 120px;
-  }
-  .mptc{
-    width: 100px;
-  }
-  .usaid{
-    width: 100px;
-  }
-  .below-content{
-    background-color: lightblue;
-    position: relative;
-    height: 200px;
-  }
-  .below-content-logo{
-    display: flex;
-    align-items: center;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-  .below-content-logo-img-pic{
-    width: 100px;
-  }
-  .contact{
-    position: absolute;
-    bottom:5px;
-    right: 0;
-  }
-  .address p{
-    position: absolute;
-    right:0;
-    top:0;
-  }
-  .googlemap:hover{
-    color: white;
-  }
-  .policy{
-  display: inline-block;
-  position: absolute;
-  bottom: 20px;
-  left: 10px;
-  }
-  .policy p{
-    margin: 0;
-    cursor: pointer;
-  }
-  .policy p:hover{
-    color: white;   
-    }
-  .contact i{
-    margin-right: 6px;
-    cursor: pointer;
-  }
-  .contact i:hover{
-    color: white;
-  }
+
 
   .uni-name h{
     font-size: 50px;
