@@ -365,10 +365,22 @@ left: 10px;
 }
 
 .body-bottom-border{ 
-  border-bottom: 3px solid blue;
+  border-bottom: 2px solid blue;
   position: absolute;
   left: 25%;
   right: 25%;
+}
+.body-bottom-border-signup{
+  border: 1px solid blue;
+  position: absolute;
+  left: 40%;
+  right: 40%;
+}
+.Log-in a{
+  text-decoration: none;
+}
+.Log-in a:hover{
+  text-decoration: underline;
 }
 
 .body-informationfill{
@@ -432,28 +444,39 @@ left: 10px;
   transition: margin-right 0.15s, margin-top 0.15s;
 }
 
-.button-login:hover{
-  margin-right: -2px;
-  margin-top: -2px;
-}
+
 
 .Below{
   font-size: 20px;
   text-align: center;
 }
 
-.create{
+.create a{
   color: rgb(0, 91, 234);
+  text-decoration: none;
   cursor: pointer;
 }
 
-.create:hover{
-  margin-left:5px;
-  margin-top: 5px;
-} 
+.create a:hover{
+  text-decoration: underline;
+}
+.content-box-signup{
+  height: 1050px;
+  border: 2px solid lightgray;
+
+}
+
+
 
 .Policy{
   text-align: center;
+}
+
+.forgot-pw a {
+  text-decoration: none;
+}
+.forgot-pw a:hover {
+  text-decoration: underline;
 }
   .category{
     display: flex;
