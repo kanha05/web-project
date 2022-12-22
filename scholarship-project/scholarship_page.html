@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goedu Cambodia</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Scholarship_style.css">
+    <script src="https://kit.fontawesome.com/bf60116f16.js" crossorigin="anonymous"></script><link rel="preconnect" href="https://fonts.googleapis.com"> <!--Using URL to import icon link into html. -->
+</head>
 </head>
 <body>
     <div class="full-container">
@@ -23,17 +26,165 @@
                 </ul>
             </div>
             <div class="register">
-                <div class="login">
-                    <a href="">Login</a>
+                <div class="current-time">
+                    <h9 id="time"> </h9>
                 </div>
-                <div class="signup">
-                    <a href="">Sign up</a>
+    
+                <script>
+                    let time= document.getElementById("time");
+                    let d = new Date();
+                    time.innerH0TML = d.toLocaleTimeString();
+                    setInterval(() => {
+                      let d = new Date();
+                      time.innerHTML = d.toLocaleTimeString();
+                    }, 1000)
+                </script>
+                
+                <div class="user">
+                    <div class="part1">
+                       <button class="notify"><i class="fa-solid fa-bell fa-2x"></i></button>
+                    </div>
+                    <div class="part2">
+                        <button class="user-pf"> <i class="fa-solid fa-user fa-2x"></i> </button>
+                    </div>
                 </div>
+            
             </div>
         </div>
-        <div class="footer">
-            <h2>Footer</h2>
+
+        <div class="content-body-s">
+            <div class="content-box-s">
+                <div class="box-s">
+                    <div class="box-img-s">
+                        <img class="box-img-pic-s" src="image/Techo.png">
+                    </div>
+                    <div class="box-text-s">
+                        <div class="box-text-s1">
+                            <p> Cambodia Gorverment Digital Scholarship &#124; Fully Funded 2023 &#124; For Cambodia Citizen.
+                        </div>
+                        <div class="box-text-s2">
+                            <p> <strong> GoEdu Cambodia </strong> - 18/12/2022 </p>
+                        </div>
+                        <div class="box-text-s3">
+                            <p> In order to speed Cambodia Developement to Industry 4.0, Cambodia Goverment offer digital scholarship to teenagers so as to encourage them to study IT major .... </p>
+                        </div>
+                        <div class="box-text-s4">
+                            <button> Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-s">
+                    <div class="box-img-s">
+                        <img class="box-img-pic-s" src="image/Chevening.png">
+                    </div>
+                    <div class="box-text-s">
+                        <div class="box-text-s1">
+                            <p> UK Gorverment Scholarsip &#124; Fully Funded 2023&#124; For International Students.
+                        </div>
+                        <div class="box-text-s2">
+                            <p> <strong> GoEdu Cambodia </strong> - 20/12/2022 </p>
+                        </div>
+                        <div class="box-text-s3">
+                            <p> As the country that has many old famous university, UK goverments are open-minded to have internation students to study in Oxford, .... </p>
+                        </div>
+                        <div class="box-text-s4">
+                            <button> Read More</button>
+                        </div>
+                    </div>
+                </div>  
+                <div class="box-s">
+                    <div class="box-img-s">
+                        <img class="box-img-pic-s" src="image/MEXT.png">
+                    </div>
+                    <div class="box-text-s">
+                        <div class="box-text-s1">
+                            <p> Japan Goverment Scholarsip &#124; Fully Funded 2023 &#124; For International Students.
+                        </div>
+                        <div class="box-text-s2">
+                            <p> <strong> GoEdu Cambodia </strong> - 18/11/2022 </p>
+                        </div>
+                        <div class="box-text-s3">
+                            <p> Japan Goverment is deligtful to have the present of study arround the world, to come experience their educationting system, culture .......
+                        </div>
+                        <div class="box-text-s4">
+                            <button> Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-s">
+                    <div class="box-img-s">
+                        <img class="box-img-pic-s" src="image/GIST.png">
+                    </div>
+                    <div class="box-text-s">
+                        <div class="box-text-s1">
+                            <p> Korea Gorvernment Scholarship, South-Korea not North-Korea &#124; Fully Funded 2023 &#124; For International Students.
+                        </div>
+                        <div class="box-text-s2">
+                            <p> <strong> GoEdu Cambodia </strong> - 10/12/2022 </p>
+                        </div>
+                        <div class="box-text-s3">
+                            <p> South-Korea is being well-known of their quality of education, the fast-growth economic, culture, K-pops. And now South-Korea Gorvernment ...... </p>
+                        </div>
+                        <div class="box-text-s4">
+                            <button> Read More</button>
+                        </div>
+                    </div>    
+                </div>
+                <div class="box-s">
+                    <div class="box-img-s">
+                        <img class="box-img-pic-s" src="image/techno-cover1.jpg">
+                    </div>
+                    <div class="box-text-s">
+                        <div class="box-text-s1">
+                            <p> Cambodia ITC Scholarship &#124; Fully Funeded &#124; For Cambodia Citizen.
+                        </div>
+                        <div class="box-text-s2">
+                            <p> <strong> GoEdu Cambodia </strong> - 25/12/2022 </p>
+                        </div>
+                        <div class="box-text-s3">
+                            <p> ITC is famous of being one of the oldest school in Cambodia and the guranted quality of education system. Now, ITC has open the application for applying .... </p>
+                        </div>
+                        <div class="box-text-s4">
+                            <button> Read More</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
         </div>
-    </div>
+        <div class="sponsorship"> 
+            <h2> Our Partners:</h2>
+            <div class="sponsorship-partner">
+                <a href="https://asean.org/" target="_blank"> <img class="asean" src="image/asean.png"> </a>
+                <a href="https://elearning.moeys.gov.kh/" target="_blank"> <img class="moeys" src="image/moeys.png"> </a>
+                <a href="https://www.cadt.edu.kh/" target="_blank"> <img class="cadt" src="image/cadt.png"> </a>
+                <a href="https://mptc.gov.kh/en/" target="_blank"> <img class="mptc" src="image/mptc.png"> </a>
+                <a href="https://www.usaid.gov/" target="_blank"> <img class="usaid" src="image/usaid.png"> </a>
+            </div>
+            <div class="body-bottom-content-border"> </div>
+        </div>
+        
+        <div class="below-content"> <!-- Creating a box for keep our page contact-->
+            
+                <div class="below-content-logo-img">
+                    <img class="below-content-logo-img-pic" src="image/goedu-logo.png">
+                </div>
+            
+            <div class="address">
+                <p> ADDRESS <br>
+                <a href="https://www.google.com/maps/place/Cambodia+Academy+of+Digital+Technology/@11.6530651,104.9095057,17z/data=!3m1!4b1!4m5!3m4!1s0x3109516bdea989b3:0x372d2c5e0e14b706!8m2!3d11.6530599!4d104.9116944" target="_blank">
+                <span class="googlemap"> Bridge 2, National Road 6A, Sangkat Prek Leap, Khan Chroy Changva, Phnom Penh </span> </a> </p>
+            </div>
+            <div class="policy">
+                <p>GoEdu Cambodia @ 2022 All Rights Reserved</p>
+            </div>
+            <div class="contact">
+                <i class="fa-brands fa-facebook fa-3x"></i>
+                <i class="fa-brands fa-telegram fa-3x"></i>
+                <i class="fa-brands fa-linkedin fa-3x"></i>
+                <i class="fa-brands fa-instagram fa-3x"></i>
+                <i class="fa-brands fa-twitter fa-3x"></i>
+            </div>
+        </div>
 </body>
 </html>
