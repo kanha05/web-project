@@ -53,7 +53,7 @@ body{
     align-items: center;
 }
 .current-time{
-  width: 100px;
+  width: 110px;
 }
 .current-time h9{
   color: white;
@@ -143,17 +143,19 @@ img{
 }
 .content-aboutus{
   height:450px;
-  background-color: lightcyan;
   position: relative;
   margin-top: 10px;
 }
 .content-aboutus h4{
   position: absolute;
   left: 20%;
-  text-decoration: underline;
   font-size: 33px;
   margin: 0;
   top: 5%;
+  cursor: pointer;
+}
+.content-aboutus h4:hover{
+  text-decoration: underline;
 }
 .content-aboutus-img{
   height: 50%;
@@ -166,13 +168,16 @@ img{
 }
 .how-it-works{
   height: 400px;
-  background-color: lightpink;
   position: relative;
 
 }
 .how-it-works h1{
   position: absolute;
   left: 20%;
+  cursor: pointer;
+}
+
+.how-it-works h1:hover{
   text-decoration: underline;
 }
 .how-it-works-p1{
@@ -210,13 +215,18 @@ img{
 .sponsorship{
   height: 200px;
   background-color: rgb(218, 209, 209);
-  border-bottom: 2px solid black;
 }
 .sponsorship h2{
   margin: 0;
   font-size: 40px;
   padding-top: 10px;
   padding-left: 610px;
+  cursor: pointer;
+}
+
+.sponsorship h2:hover{
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
 }
 .sponsorship-partner{
   display:flex;
@@ -226,6 +236,8 @@ img{
 }
 .asean{
   width: 180px;
+  margin-right: -90px;
+  margin-left: -30px;
 }
 .moeys{
   width: 150px;
@@ -238,6 +250,13 @@ img{
 }
 .usaid{
   width: 100px;
+  margin-left: -20px;
+}
+.body-bottom-content-border{
+  border-bottom: 3px solid rgb(155, 148, 148);
+  position: absolute;
+  left: 31%;
+  right: 30%;
 }
 .below-content{
   background-color: rgb(218, 209, 209);
@@ -251,9 +270,13 @@ img{
   left: 0;
   top: 0;
 } */
+.below-content-logo-img{
+  position: absolute;
+  top: -10%;
+
+}
 .below-content-logo-img-pic{
-  width: 160px;
-  
+  width: 200px;
 }
 .contact{
   position: absolute;
