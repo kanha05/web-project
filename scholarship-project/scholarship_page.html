@@ -23,17 +23,31 @@
                 </ul>
             </div>
             <div class="register">
-                <div class="login">
-                    <a href="">Login</a>
+                <div class="current-time">
+                    <h9 id="time"> </h9>
                 </div>
-                <div class="signup">
-                    <a href="">Sign up</a>
+    
+                <script>
+                    let time= document.getElementById("time");
+                    let d = new Date();
+                    time.innerH0TML = d.toLocaleTimeString();
+                    setInterval(() => {
+                      let d = new Date();
+                      time.innerHTML = d.toLocaleTimeString();
+                    }, 1000)
+                </script>
+                
+                <div class="user">
+                    <div class="button1">
+                        <button class="login"> <a href="Login_index.html"> Log in </a>  </button>
+                    </div>
+                    <div class="button2">
+                        <button class="signup"> <a href="Signup_index.html"> Sign up </a> </button>
+                    </div>
                 </div>
+              
             </div>
-        </div>
-        <div class="footer">
-            <h2>Footer</h2>
-        </div>
+         </div>
     </div>
 </body>
 </html>
