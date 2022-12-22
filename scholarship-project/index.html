@@ -9,6 +9,7 @@
     <a target="_blank" href="https://icons8.com/icon/118497/facebook"></a>
     <a target="_blank" href="https://icons8.com/icon/19318/youtube"></a>
     <a target="_blank" href="https://icons8.com/icon/13930/linkedin"></a>
+    <script src="https://kit.fontawesome.com/bf60116f16.js" crossorigin="anonymous"></script><link rel="preconnect" href="https://fonts.googleapis.com"> <!--Using URL to import icon link into html. -->
 </head>
 <body>
     <div class="full-container">
@@ -26,71 +27,89 @@
                 </ul>
             </div>
             <div class="register">
-                <div class="login">
-                    <a href="">Login</a>
+                <div class="current-time">
+                    <h9 id="time"> a</h9>
                 </div>
-                <div class="signup">
-                    <a href="">Sign up</a>
-                </div>
+    
+                <script>
+                    let time= document.getElementById("time");
+                    let d = new Date();
+                    time.innerH0TML = d.toLocaleTimeString();
+                    setInterval(() => {
+                      let d = new Date();
+                      time.innerHTML = d.toLocaleTimeString();
+                    }, 1000)
+                </script>
+    
             </div>
         </div>
-        <div id="slideshow">
-            <div class="slide-wrapper">
-                <div class="slide">
-                    <div class="slide-show">
-                    <div class="slide-image">
-                        <img src="image/sholorship-img2.jpg"> 
-                    </div>
-                    <div class="slide-text">
-                        <h>Get a chance to make your dream come true </h>
-                    </div>
-                </div>
-                    <!-- <h1 class="slide-number">
-                        Get a chance to make your dream come true 
-                    </h1>
-                    <img src="image/sholorship-img1.jpg"> -->
-                </div>
-                <div class="slide">
-                    <div class="slide-show">
-                        <div class="slide-image">
-                            <img src="image/sholorship-img2.jpg"> 
-                        </div>
-                        <div class="slide-text">
-                            <h>Get a chance to make your dream come true </h>
-                        </div>
-                </div>
-                </div>
-                <div class="slide">
-                    <div class="slide-show">
-                        <div class="slide-image">
-                            <img src="image/sholorship-img2.jpg"> 
-                        </div>
-                        <div class="slide-text">
-                            <h>Get a chance to make your dream come true </h>
-                        </div>
-                </div>
-                </div>
-                <div class="slide">
-                    <div class="slide-show">
-                        <div class="slide-image">
-                            <img src="image/sholorship-img2.jpg"> 
-                        </div>
-                        <div class="slide-text">
-                            <h>Get a chance to make your dream come true </h>
-                        </div>
-                </div>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext"> 1/5</div>
+                    <img src="image/Techo.png" style="width:100%">
             </div>
+    
+            <div class="mySlides fade">
+                <div class="numbertext"> 2/5 </div>
+                    <img src="image/Thai.png" style="width:100%">
+            </div>
+    
+            <div class="mySlides fade">
+                <div class="numbertext"> 3/5 </div>
+                    <img src="image/Chevening.png" style="width:100%">
+            </div>
+    
+            <div class="mySlides fade">
+                <div class="numbertext"> 4/5 </div>
+                    <img src="image/Zaman.png" style="width:100%">
+            </div>
+    
+            <div class="mySlides fade">
+                <div class="numbertext"> 5/5 </div>
+                    <img src="image/MEXT.png" style="width:100%">
+            </div>
+    
         </div>
+        <br>
+    
+        <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span>
         </div>
-        <div class="main_content">
-        <div class="text-content-1">
-        <pre>                               START HERE       
-                                    Easy to find scholarship 
-                         Whenever you go, ther's an opportunity waiting for you  
-                                  Seeking for the best option for you 
-        </pre>
-        </div>
-        <div>
+    
+        <script>
+            let slideIndex = 0;
+            showSlides();
+    
+            function showSlides() 
+                {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+    
+                    for (i = 0; i < slides.length; i++) 
+                        {
+                            slides[i].style.display = "none";  
+                        }
+                        slideIndex++;
+    
+                    if (slideIndex > slides.length) {slideIndex = 1}    
+                        for (i = 0; i < dots.length; i++) 
+                            {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " active";
+                    setTimeout(showSlides, 2000); // Change image every 2 seconds
+                }
+        </script>
+        
+        <!-- <div>
             <h1>Explor by our catergory</h1>
         </div>
         <div class="category">
@@ -125,7 +144,7 @@
                 </div>
             </div>
 
-        </div>
+        </div> -->
         <!-- <div class="join">
             <h2>Join with us</h2>
         </div>
@@ -214,18 +233,15 @@
                 <a href="https://elearning.moeys.gov.kh/" target="_blank"> <img class="moeys" src="image/moeys.png"> </a>
                 <a href="https://www.cadt.edu.kh/" target="_blank"> <img class="cadt" src="image/cadt.png"> </a>
                 <a href="https://mptc.gov.kh/en/" target="_blank"> <img class="mptc" src="image/mptc.png"> </a>
-                <a href="https://www.usaid.gov/" tartget="_blank"> <img class="usaid" src="image/usaid.png"> </a>
+                <a href="https://www.usaid.gov/" target="_blank"> <img class="usaid" src="image/usaid.png"> </a>
             </div>
         </div>
         <div class="below-content"> <!-- Creating a box for keep our page contact-->
-            <div class="below-content-logo">
+            
                 <div class="below-content-logo-img">
                     <img class="below-content-logo-img-pic" src="image/goedu-logo.png">
                 </div>
-                <div class="below-content-logo-text"> 
-                    <p> GoEdu Cambodia </p>
-                </div>
-            </div>
+            
             <div class="address">
                 <p> ADDRESS <br>
                 <a href="https://www.google.com/maps/place/Cambodia+Academy+of+Digital+Technology/@11.6530651,104.9095057,17z/data=!3m1!4b1!4m5!3m4!1s0x3109516bdea989b3:0x372d2c5e0e14b706!8m2!3d11.6530599!4d104.9116944" target="_blank">
