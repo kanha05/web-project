@@ -57,6 +57,10 @@ body{
 }
 .current-time h9{
   color: white;
+  cursor: pointer;
+}
+.current-time h9:hover{
+  color: #26BD99;
 }
 .user{
   width: 250px;
@@ -82,7 +86,21 @@ body{
   height: 100%;
   border-radius: 50px;
   cursor: pointer;
-  
+}
+
+.part1, .part2{
+  height:90%;
+  width: 40px;
+}
+.notify, .user-pf{
+
+  border-radius: 100px;;
+  cursor: pointer;
+  height: 100%;
+}
+
+.user-pf:hover, .notify:hover{
+  background-color: #26BD99;
 }
 
 .mySlides{
