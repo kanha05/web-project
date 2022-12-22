@@ -1,38 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goedu Cambodia</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-</head>
-<body>
-    <div class="full-container">
-        <div class="menu">
-            <div class="logo">
-                <img src="image/goedu-logo.png">
-            </div>
-            <div class="main-menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="scholarship_page.html">Scholarship</a></li>
-                    <li><a href="university_page.html">University</a></li>
-                    <li><a href="major_page.html">Major</a></li>
-                    <li><a href="contactus_page.html">Contact us</a></li>
-                </ul>
-            </div>
-            <div class="register">
-                <div class="login">
-                    <a href="">Login</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Goedu Cambodia</title>
+        <link rel="stylesheet" href="style.css">
+        <a target="_blank" href="https://icons8.com/icon/118497/facebook"></a>
+        <a target="_blank" href="https://icons8.com/icon/19318/youtube"></a>
+        <a target="_blank" href="https://icons8.com/icon/13930/linkedin"></a>
+        <script src="https://kit.fontawesome.com/bf60116f16.js" crossorigin="anonymous"></script><link rel="preconnect" href="https://fonts.googleapis.com"> <!--Using URL to import icon link into html. -->
+    </head>
+    <body>
+        <div class="full-container">
+            <div class="menu">
+                <div class="logo">
+                    <img src="image/goedu-logo.png">
                 </div>
-                <div class="signup">
-                    <a href="">Sign up</a>
+                <div class="main-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="scholarship_page.html">Scholarship</a></li>
+                        <li><a href="university_page.html">University</a></li>
+                        <li><a href="major_page.html">Major</a></li>
+                        <li><a href="contactus_page.html">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="register">
+                    <div class="current-time">
+                        <h9 id="time"> </h9>
+                    </div>
+        
+                    <script>
+                        let time= document.getElementById("time");
+                        let d = new Date();
+                        time.innerH0TML = d.toLocaleTimeString();
+                        setInterval(() => {
+                          let d = new Date();
+                          time.innerHTML = d.toLocaleTimeString();
+                        }, 1000)
+                    </script>
+                    
+                    <div class="user">
+                        <div class="button1">
+                            <button class="login"> Log in </button>
+                        </div>
+                        <div class="button2">
+                            <button class="signup"> Sign up </button>
+                        </div>
+                    </div>
+                  
+        
                 </div>
             </div>
-        </div>
 
         <div class="uniPage_cover">
             <img src="image/uni_page_cover_3.2.jpg">
@@ -98,138 +118,63 @@
             </div>
             <div class="uni_box">
                 <div class="inside-unibox"><a href="rule_uni.html">
-                    <img src="image/rule-uni.jpg">
+                    <img src="image/rule-uni1.jpg">
                     <p>Find Free education in cambodia</p>
                 </a>
                 </div>
             </div>
             <div class="uni_box">
-                <div class="inside-unibox">
-                    <img src="image/CADT_uni.jpg">
-                    <p>Find Free education in cambodia</p>
+                <div class="inside-unibox"><a href="ies_uni.html">
+                    <img src="image/ies-uni.jpg">
+                    <p>institute of electrical science</p>
+                </a>
                 </div>
             </div>
             <div class="uni_box">
-                <div class="inside-unibox">
-                    <img src="image/CADT_uni.jpg">
-                    <p>Find Free education in cambodia</p>
+                <div class="inside-unibox"><a href="ies_uni.html">
+                    <img src="image/ppit-uni.jpg">
+                    <p>Phnom Penh Institute of Technology</p>
+                </a>
                 </div>
             </div>
             <div class="uni_box">
-                <div class="inside-unibox">
-                    <img src="image/CADT_uni.jpg">
-                    <p>Find Free education in cambodia</p>
+                <div class="inside-unibox"><a href="rua_uni.html">
+                    <img src="image/ppit-uni.jpg">
+                    <p>Phnom Penh Institute of Technology</p>
+                </a>
                 </div>
             </div>
-            <div class="uni_box">
-                <div class="inside-unibox">
-                    <img src="image/CADT_uni.jpg">
-                    <p>Find Free education in cambodia</p>
-                </div>
-            </div>
-            <div class="uni_box">
-                <div class="inside-unibox">
-                    <img src="image/CADT_uni.jpg">
-                    <p>Find Free education in cambodia</p>
-                </div>
-            </div>
-            <div class="uni_box">
-                <div class="inside-unibox">
-                    <img src="image/CADT_uni.jpg">
-                    <p>Find Free education in cambodia</p>
-                </div>
-            </div>
-        </div>
 
         <div class="private_uni">
             <h>Private University</h>
         </div>
 
-        <div class="uni_category">
+        <div class="uni_box">
+            <div class="inside-unibox"><a>
+                <img src="image/aupp-uni.jpg">
+                <p>American University of Phnom Penh</p>
+            </a>
+            </div>
+        </div>
             <div class="uni_box">
                 <div class="inside-unibox">
-                    <img src="image/CADT_uni.jpg">
+                    <img src="image/camtech-uni.jpg">
                     <p>Find Free education in cambodia</p>
                 </div>
             </div>
             <div class="uni_box">
                 <div class="inside-unibox">
-                    <img src="image/CADT_uni.jpg">
+                    <img src="image/camed-unni.jpg">
                     <p>Find Free education in cambodia</p>
                 </div>
             </div>
             <div class="uni_box">
                 <div class="inside-unibox">
-                    <img src="image/CADT_uni.jpg">
+                    <img src="image/beltie-uni.jpg">
                     <p>Find Free education in cambodia</p>
                 </div>
             </div>
-            <div class="uni_box">
-                <div class="inside-unibox">
-                    <img src="image/CADT_uni.jpg">
-                    <p>Find Free education in cambodia</p>
-                </div>
-            </div>
-            <div class="uni_box">
-                <div class="inside-unibox">
-                    <img src="image/CADT_uni.jpg">
-                    <p>Find Free education in cambodia</p>
-                </div>
-            </div>
-            <div class="uni_box">
-                <div class="inside-unibox">
-                    <img src="image/CADT_uni.jpg">
-                    <p>Find Free education in cambodia</p>
-                </div>
-            </div>
-            <div class="uni_box">
-                <div class="inside-unibox">
-                    <img src="image/CADT_uni.jpg">
-                    <p>Find Free education in cambodia</p>
-                </div>
-            </div>
-            <div class="uni_box">
-                <div class="inside-unibox">
-                    <img src="image/CADT_uni.jpg">
-                    <p>Find Free education in cambodia</p>
-                </div>
-            </div>
-            <div class="uni_box">
-                <div class="inside-unibox">
-                    <img src="image/CADT_uni.jpg">
-                    <p>Find Free education in cambodia</p>
-                </div>
-            </div>
-            <div class="uni_box">
-                <div class="inside-unibox">
-                    <img src="image/CADT_uni.jpg">
-                    <p>Find Free education in cambodia</p>
-                </div>
-            </div>
-            <div class="uni_box">
-                <div class="inside-unibox">
-                    <img src="image/CADT_uni.jpg">
-                    <p>Find Free education in cambodia</p>
-                </div>
-            </div>
-            <div class="uni_box">
-                <div class="inside-unibox">
-                    <img src="image/CADT_uni.jpg">
-                    <p>Find Free education in cambodia</p>
-                </div>
-            </div>
-            <div class="uni_box">
-                <div class="inside-unibox">
-                    <img src="image/CADT_uni.jpg">
-                    <p>Find Free education in cambodia</p>
-                </div>
-            </div>
-            <div class="uni_box">
-                <div class="inside-unibox">
-                    <img src="image/CADT_uni.jpg">
-                    <p>Find Free education in cambodia</p>
-                </div>
-            </div>
+            
         </div>
 
         <div class="footer">
