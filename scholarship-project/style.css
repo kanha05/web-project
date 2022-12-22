@@ -48,6 +48,9 @@ body{
     padding-left: 470px;
     display: inline-flex;
 }
+.current-time h9{
+  color: white;
+}
 .login{
     margin-bottom: auto;
     padding: 5px;
