@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
 body{
     background-color: white;
+    margin: 0;
 }
 .full-container{
-  
+  margin: 0;
   overflow: hidden;
     width: 100%;
     /* padding-top: 5px; */
@@ -48,12 +49,12 @@ body{
     color: #26BD99;
 }
 .register{
-    width: 300px;
+    width: 320px;
     display: flex;
     align-items: center;
 }
 .current-time{
-  width: 100px;
+  width: 120px;
 }
 .current-time h9{
   color: white;
@@ -138,18 +139,18 @@ img{
   font-size: 25px;
   width: 700px;
   position: absolute;
-  left: 50%;
+  left: 40%;
   bottom: 30%;
 }
 .content-aboutus{
   height:450px;
-  background-color: lightcyan;
+  background-color: white;
   position: relative;
   margin-top: 10px;
 }
 .content-aboutus h4{
   position: absolute;
-  left: 20%;
+  left: 10%;
   text-decoration: underline;
   font-size: 33px;
   margin: 0;
@@ -162,11 +163,11 @@ img{
 .content-aboutus-img img{
   width: 80%;
   left: 30%;
-  margin-left: 45%;
+  margin-left: 15%;
 }
 .how-it-works{
   height: 400px;
-  background-color: lightpink;
+  background-color: white;
   position: relative;
 
 }
@@ -209,14 +210,15 @@ img{
 }
 .sponsorship{
   height: 200px;
-  background-color: rgb(218, 209, 209);
+  background-color: white;
   border-bottom: 2px solid black;
 }
 .sponsorship h2{
   margin: 0;
   font-size: 40px;
   padding-top: 10px;
-  padding-left: 610px;
+  padding-left: 520px;
+  color: #26BD99;
 }
 .sponsorship-partner{
   display:flex;
@@ -240,7 +242,7 @@ img{
   width: 100px;
 }
 .below-content{
-  background-color: rgb(218, 209, 209);
+  background-color: #23384e;
   position: relative;
   height: 200px;
 }
@@ -261,12 +263,16 @@ img{
   right: 0;
 }
 .address p{
+  color: white;
   position: absolute;
   right:0;
   top:0;
 }
-.googlemap:hover{
+.address a{
   color: white;
+}
+.googlemap:hover{
+  color: blue;
 }
 .policy{
 display: inline-block;
@@ -292,6 +298,8 @@ left: 10px;
   text-decoration: none;
 }
 
+
+
   .category{
     display: flex;
   }
@@ -315,6 +323,126 @@ left: 10px;
   .inside-box img{
     padding-left: 50px;
     width: 110px;
+    
+  }
+  .content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .content-head{
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo{
+    width: 200px;
+  }
+  
+  .head-text p{
+    font-size: 30px;
+  }
+  
+  .content-box{
+    height: 1120px;
+    width: 600px;
+    position: relative;
+    background-color: white;
+  }
+  
+  .container-body{
+    padding:32px;
+    height: 550px;
+  }
+  
+  
+  .content-body-name{
+    height: 100px;
+  }
+  
+  .content-body-name h1{
+    margin: 0;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  .body-bottom-border{ 
+    border-bottom: 3px solid blue;
+    position: absolute;
+    left: 25%;
+    right: 25%;
+  }
+  
+  .body-informationfill{
+    font-weight: 600;
+    font-size: 20px;
+    padding-left: 50px; 
+  }
+  
+  .star{
+      color: red;
+  }
+  .fill-box{
+    display: flex; 
+    border: 2px solid rgb(240, 238, 238);
+    width: 450px;
+    border-radius: 10px;
+  }
+  
+  .Cam-pic{
+    width: 40px;  
+    padding-top: 15px;
+  }
+  
+  .fill-text{
+    padding-left: 20px;
+    flex:1;
+  }
+  
+  .text-button, .typebuttonpw{
+    width: 95%;
+    height: 60px;
+    font-size: 23px;
+    border: none;
+    outline: none;
+  }
+  
+  .text-button::placeholder{
+    font-size: 23px;
+    padding-left: 10px;
+  }
+  
+  .typebutton{
+    padding-left: 10px;
+  }
+  
+  .button-login{
+    color: white;
+    font-size: 20px;
+    height: 50px;
+    width: 455px;
+    margin-left: 50px;
+    background-color: rgb(0, 91, 234);
+    border-radius: 100px;
+    cursor: pointer;
+    transition: margin-right 0.15s, margin-top 0.15s;
+    margin-top: 20px;
+  }
+  
+  .Below{
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .Log-in{
+    color: rgb(0, 91, 234);
+    cursor: pointer;
+  }
+  
+  .Policy{
+    text-align: center;
   }
   /* .join{
     font-family: 'Rubik', sans-serif;
@@ -362,10 +490,11 @@ left: 10px;
     /* margin-top: 45px; */
   }
   .uniPage_cover{
-    width: 1180px;
+    width: 1200px;
     position: relative;
     margin-top: 45px;
-    padding-left: 25px;
+    padding-left: 40px;
+  
   }
   .uniPage_cover p{
     font-size: xx-large;
@@ -396,7 +525,6 @@ left: 10px;
     font-size: x-large;
     padding: 30px;
     color: #23384e;
-
   }
 
   .search_school input[type=text] {
@@ -446,14 +574,14 @@ left: 10px;
 
   .major_page_cover img{
     width: 1180px;
-    padding-left: 25px;
+    padding-left: 40px;
     margin-top: -15px;
   }
 
   .major_gallery{
     width: 100%;
     margin: 15px;
-    padding-left: 5px;
+    padding-left: px;
   }
 
   .gallery{
@@ -491,7 +619,7 @@ left: 10px;
    /* Popup container */
 /* Style The Dropdown Button */
 .dropbtn {
-  background-color: #6b6d6b;
+  background-color: #23384e;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -674,4 +802,135 @@ left: 10px;
 }
 .scholarship img{
   width: 600px;
+}
+.content-body-s{
+  padding-top: 50px;
+  height: 650px;
+  position: relative;
+}
+
+.content-box-s{
+  display:flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  left: 10%;
+}
+
+.box-s{
+  border: 2px solid lightgray;
+  height: 200px;
+  display: flex;
+  column-gap: 10px;
+}
+
+.box-img-s{
+
+  height: 100%;
+  width: 30%;
+}
+
+.box-img-pic-s{
+  width: 100%;
+  height: 100%;
+}
+
+.box-text-s{
+
+  display:flex;
+  flex: 1;
+  flex-direction: column;
+}
+.box-text-s1{
+
+  width: 100%;
+  height: 30%;
+}
+.box-text-s1 p {
+  font-size: 25px;
+  margin: 0;
+  cursor: pointer;
+}
+.box-text-s1 p:hover {
+  color:rgb(29, 180, 193);
+}
+.box-text-s2 p{
+  font-size: 13px;
+}
+.box-text-s3{
+
+  margin: 0;
+  height: 30%;
+}
+.box-text-s3 p{
+  margin: 0;
+  color: gray;
+}
+.box-text-s4{
+  flex: 1;
+}
+.box-text-s4 button{
+  height: 100%;
+  border: none;
+  border: 1px solid rgb(29, 180, 193);
+  background-color: rgb(29, 180, 193);
+  border-radius: 2px;
+  cursor:pointer;
+}
+.box-text-s4 button:hover{
+  color: rgb(29, 180, 193);
+  background-color: white;
+  border: 1px solid black
+}
+
+.body-box{
+  margin-top: 50px;
+  width: 80%;
+  margin-left: 10%; 
+  height: auto;
+  border: 2px solid lightgray;
+  border-radius: 10px;
+}
+.sls-img{
+  width: 100%;
+  background-color: lightgreen;
+  height: auto;
+}
+.sls-pic{
+  width: 100%;
+  height: 100%;
+}
+.sls-text{
+ 
+  width: 100%;
+  height: auto;
+  
+}
+
+.sls-text p{
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.sls-detail{
+  width: 100%;
+  height: auto;
+}
+.sls-detail span{
+  margin-left: 50px;
+}
+.sls-detail p{
+  font-size: 20px;
+}
+.sls-detail ul{
+  font-size: 30px;
+  font-weight: 700;
+}
+.sls-detail ul li{
+  margin-left: 50px;
+  font-weight: 500;
+  font-size: 25px;
 }
