@@ -11,44 +11,47 @@
 </head>
 <body>
     <div class="full-container">
-        <div class="menu">
-            <div class="logo">
-                <img src="image/goedu-logo.png">
-            </div>
-            <div class="main-menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="scholarship_page.html">Scholarship</a></li>
-                    <li><a href="university_page.html">University</a></li>
-                    <li><a href="major_page.html">Major</a></li>
-                    <li><a href="contactus_page.html">Contact us</a></li>
-                </ul>
-            </div>
-            <div class="register">
-                <div class="current-time">
-                    <h9 id="time"> </h9>
+        <div class="full-container">
+            <div class="menu">
+                <div class="logo">
+                    <img src="image/goedu-logo.png">
                 </div>
-    
-                <script>
-                    let time= document.getElementById("time");
-                    let d = new Date();
-                    time.innerH0TML = d.toLocaleTimeString();
-                    setInterval(() => {
-                      let d = new Date();
-                      time.innerHTML = d.toLocaleTimeString();
-                    }, 1000)
-                </script>
-                
-                <div class="user">
-                    <div class="part1">
-                       <button class="notify"><i class="fa-solid fa-bell fa-2x"></i></button>
+                <div class="main-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="scholarship_page.html">Scholarship</a></li>
+                        <li><a href="university_page.html">University</a></li>
+                        <li><a href="major_page.html">Major</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="register">
+                    <div class="current-time">
+                        <h9 id="time"> </h9>
                     </div>
-                    <div class="part2">
-                        <button class="user-pf"> <i class="fa-solid fa-user fa-2x"></i> </button>
+        
+                    <script>
+                        let time= document.getElementById("time");
+                        let d = new Date();
+                        time.innerH0TML = d.toLocaleTimeString();
+                        setInterval(() => {
+                          let d = new Date();
+                          time.innerHTML = d.toLocaleTimeString();
+                        }, 1000)
+                    </script>
+                    
+                    <div class="user">
+                        <div class="button1">
+                            <button class="login"><a href="Login.html"> Log in</a> </button>
+                        </div>
+                        <div class="button2">
+                            <button class="signup"><a href="Signup.html"> Sign up </a> </button>
+                        </div>
                     </div>
+                  
+        
                 </div>
             </div>
-        </div>
 
         <div class="uni_container">
         <div class="cadt_uni_cover">
@@ -245,9 +248,39 @@
         </div> -->
 
     </div>
-        <div class="footer">
-            <h2>Footer</h2>
+    <div class="sponsorship"> 
+        <h2> Our Partners:</h2>
+        <div class="sponsorship-partner">
+            <a href="https://asean.org/" target="_blank"> <img class="asean" src="image/asean.png"> </a>
+            <a href="https://elearning.moeys.gov.kh/" target="_blank"> <img class="moeys" src="image/moeys.png"> </a>
+            <a href="https://www.cadt.edu.kh/" target="_blank"> <img class="cadt" src="image/cadt.png"> </a>
+            <a href="https://mptc.gov.kh/en/" target="_blank"> <img class="mptc" src="image/mptc.png"> </a>
+            <a href="https://www.usaid.gov/" target="_blank"> <img class="usaid" src="image/usaid.png"> </a>
         </div>
+    </div>
+    </div>
+    <div class="below-content"> <!-- Creating a box for keep our page contact-->
+        
+            <!-- <div class="below-content-logo-img"> -->
+                <img class="below-content-logo-img-pic" src="image/goedu-logo.png">
+            <!-- </div> -->
+        
+        <div class="address">
+            <p> ADDRESS <br>
+            <a href="https://www.google.com/maps/place/Cambodia+Academy+of+Digital+Technology/@11.6530651,104.9095057,17z/data=!3m1!4b1!4m5!3m4!1s0x3109516bdea989b3:0x372d2c5e0e14b706!8m2!3d11.6530599!4d104.9116944" target="_blank">
+            <span class="googlemap"> Bridge 2, National Road 6A, Sangkat Prek Leap, Khan Chroy Changva, Phnom Penh </span> </a> </p>
+        </div>
+        <div class="policy">
+            <p>GoEdu Cambodia @ 2022 All Rights Reserved</p>
+        </div>
+        <div class="contact">
+            <i class="fa-brands fa-facebook fa-3x"></i>
+            <i class="fa-brands fa-telegram fa-3x"></i>
+            <i class="fa-brands fa-linkedin fa-3x"></i>
+            <i class="fa-brands fa-instagram fa-3x"></i>
+            <i class="fa-brands fa-twitter fa-3x"></i>
+        </div>
+    </div>
     </div>
     </div>
 </body>
