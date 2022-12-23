@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goedu Cambodia</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/bf60116f16.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Using URL to import icon link into html. -->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Goedu Cambodia</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/bf60116f16.js" crossorigin="anonymous"></script><link rel="preconnect" href="https://fonts.googleapis.com"> <!--Using URL to import icon link into html. -->
+    </head>
 </head>
 
 <body>
@@ -27,11 +26,27 @@
                 </ul>
             </div>
             <div class="register">
-                <div class="login">
-                    <a href="">Login</a>
+                <div class="current-time">
+                    <h9 id="time"> </h9>
                 </div>
-                <div class="signup">
-                    <a href="">Sign up</a>
+    
+                <script>
+                    let time= document.getElementById("time");
+                    let d = new Date();
+                    time.innerH0TML = d.toLocaleTimeString();
+                    setInterval(() => {
+                      let d = new Date();
+                      time.innerHTML = d.toLocaleTimeString();
+                    }, 1000)
+                </script>
+                
+                <div class="user">
+                    <div class="part1">
+                       <button class="notify"><i class="fa-solid fa-bell fa-2x"></i></button>
+                    </div>
+                    <div class="part2">
+                        <button class="user-pf"> <i class="fa-solid fa-user fa-2x"></i> </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -40,10 +55,11 @@
             <img src="image/major_page_cover.jpg">
         </div>
 
-        <div class="header">
-            <h>
+        <div class="header"><br>
+            <h><b style="font-size: x-large; padding: 20px;">
                 Learn more about about what the major is the right choice for you
-            </h>
+            </b>
+            </h><br>
         </div>
         <div class="major_gallery">
             <div class="gallery">
@@ -92,31 +108,8 @@
                             <p>Designing, marketing</p>
                         </button>
                         <div class="dropdown-content">
-                            <p>Computer Science is the study of computers and computational systems, we focus mostly on
-                                software systems, including computer theory, design, development, and application. The
-                                majority of Computer Science is related to Computer Systems, Data Science, Machine
-                                Learning, Information Security, Database Management, Design Thinking, Programming
-                                Languages, Software Engineering, and Theory of Computing.</p>
-                            <ul>Upon completion of this program, the students will be able to:
-                                <li>Develop a website or web application</li>
-                                <li>Develop mobile application</li>
-                                <li>Analysis and design database</li>
-                                <li>Understand the social and ethical implications of working as a professional in the
-                                    field of computer science</li>
-                                <li>Critically analyze a problem and design, implement, and evaluate a computer solution
-                                    that meets the requirement</li>
-                                <li>Work effectively in small groups on medium scale computing projects</li>
-                            </ul>
-                            <b>Future Careers</b>
-                            <ul>
-                                <li>Software Developer (Web, Mobile, Java, API…) </li>
-                                <li>Data Analyst </li>
-                                <li>IT Project Manager</li>
-                                <li>Digital Innovator</li>
-                                <li>Quality Assurance Engineer</li>
-                                <li>Database Designer and Administrator</li>
-                                <li>Digital Technology Entrepreneur</li>
-                            </ul>
+                            <p>An e-commerce degree program focuses on preparing students for success in creating, managing, and marketing online goods and services. Some of the subjects covered as part of an ecommerce major include electronic marketing, web design, contracting, and information technology..</p>
+                           
                         </div>
                     </div>
                 </div>
@@ -126,35 +119,12 @@
                 <div class="inside_gallery">
                     <div class="dropdown">
                         <button class="dropbtn"><img src="image/communication.png" style="width: 180px;"><br>
-                            <p>Computer Science</p>
-                            <p>Coding, Thinking</p>
+                            <p>Telecom and Networking</p>
+                            <p>troubleshoot, manage</p>
                         </button>
                         <div class="dropdown-content">
-                            <p>Computer Science is the study of computers and computational systems, we focus mostly on
-                                software systems, including computer theory, design, development, and application. The
-                                majority of Computer Science is related to Computer Systems, Data Science, Machine
-                                Learning, Information Security, Database Management, Design Thinking, Programming
-                                Languages, Software Engineering, and Theory of Computing.</p>
-                            <ul>Upon completion of this program, the students will be able to:
-                                <li>Develop a website or web application</li>
-                                <li>Develop mobile application</li>
-                                <li>Analysis and design database</li>
-                                <li>Understand the social and ethical implications of working as a professional in the
-                                    field of computer science</li>
-                                <li>Critically analyze a problem and design, implement, and evaluate a computer solution
-                                    that meets the requirement</li>
-                                <li>Work effectively in small groups on medium scale computing projects</li>
-                            </ul>
-                            <b>Future Careers</b>
-                            <ul>
-                                <li>Software Developer (Web, Mobile, Java, API…) </li>
-                                <li>Data Analyst </li>
-                                <li>IT Project Manager</li>
-                                <li>Digital Innovator</li>
-                                <li>Quality Assurance Engineer</li>
-                                <li>Database Designer and Administrator</li>
-                                <li>Digital Technology Entrepreneur</li>
-                            </ul>
+                            <p>is to provide students with the right expertise to design, troubleshoot, implement and manage wired and wireless networking systems.</p>
+                           
                         </div>
                     </div>
                 </div>
@@ -164,35 +134,12 @@
                 <div class="inside_gallery">
                     <div class="dropdown">
                         <button class="dropbtn"><img src="image/examination.png" style="width: 180px;"><br>
-                            <p>Computer Science</p>
-                            <p>Coding, Thinking</p>
+                            <p>Doctor</p>
+                            <p>Caring, treatment</p>
                         </button>
                         <div class="dropdown-content">
-                            <p>Computer Science is the study of computers and computational systems, we focus mostly on
-                                software systems, including computer theory, design, development, and application. The
-                                majority of Computer Science is related to Computer Systems, Data Science, Machine
-                                Learning, Information Security, Database Management, Design Thinking, Programming
-                                Languages, Software Engineering, and Theory of Computing.</p>
-                            <ul>Upon completion of this program, the students will be able to:
-                                <li>Develop a website or web application</li>
-                                <li>Develop mobile application</li>
-                                <li>Analysis and design database</li>
-                                <li>Understand the social and ethical implications of working as a professional in the
-                                    field of computer science</li>
-                                <li>Critically analyze a problem and design, implement, and evaluate a computer solution
-                                    that meets the requirement</li>
-                                <li>Work effectively in small groups on medium scale computing projects</li>
-                            </ul>
-                            <b>Future Careers</b>
-                            <ul>
-                                <li>Software Developer (Web, Mobile, Java, API…) </li>
-                                <li>Data Analyst </li>
-                                <li>IT Project Manager</li>
-                                <li>Digital Innovator</li>
-                                <li>Quality Assurance Engineer</li>
-                                <li>Database Designer and Administrator</li>
-                                <li>Digital Technology Entrepreneur</li>
-                            </ul>
+                            <p>Doctors, also known as physicians, are licensed health professionals who maintain and restore human health through the practice of medicine. They examine patients, review their medical history, diagnose illnesses or injuries, administer treatment, and counsel patients on their health and well-being.</p>
+                            
                         </div>
                     </div>
                 </div>

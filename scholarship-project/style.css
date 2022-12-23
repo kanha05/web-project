@@ -108,14 +108,14 @@ img{
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #23384e;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active{
-  background-color: #717171;
+  background-color: white;
 }
 
 /* Fading animation */
@@ -386,14 +386,16 @@ left: 10px;
   }
   .public_uni h{
     font-weight: bold;
-    font-size: large;
+    font-size: x-large;
     padding: 30px;
+    color: #23384e;
     
   }
   .private_uni h{
     font-weight: bold;
-    font-size: large;
+    font-size: x-large;
     padding: 30px;
+    color: #23384e;
 
   }
 
@@ -431,6 +433,7 @@ left: 10px;
     text-align: center;
     /* padding: 13px; */
     font-size: large;
+    padding-bottom: 10px;
   }
   .inside-unibox img{
     width: 100%;
